@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".WeatherActivity">
+
+    <ImageView
+        android:id="@+id/ivWeatherIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        tools:srcCompat="@drawable/na" />
+
+    <TextView
+        android:id="@+id/tvTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivWeatherIcon"
+        android:layout_alignStart="@+id/ivWeatherIcon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="1dp"
+        android:text="@string/temperature"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tvCondition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTemperature"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-2dp"
+        android:text="@string/condition"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCondition"
+        android:layout_alignStart="@+id/tvCondition"
+        android:layout_marginStart="-15dp"
+        android:layout_marginTop="1dp"
+        android:text="@string/location"
+        android:textSize="23sp" />
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        tools:srcCompat="@drawable/yahoo_logo" />
+</RelativeLayout>
